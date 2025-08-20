@@ -35,13 +35,13 @@ Create a `.env` file in the root directory with these variables:
 ```
 # XDC Mainnet
 VITE_TOKEN_ADDRESS=<mainnet-token-contract-address>
-VITE_Dice_ADDRESS=<mainnet-Dice-contract-address>
-VITE_XDC_MAINNET_RPC=https://erpc.xinfin.network
+VITE_DICE_ADDRESS=<mainnet-dice-contract-address>
+VITE_XDC_MAINNET_RPC=https://rpc.xinfin.network
 
 # XDC Testnet (Apothem)
 VITE_APOTHEM_TOKEN_ADDRESS=<testnet-token-contract-address>
-VITE_APOTHEM_Dice_ADDRESS=<testnet-Dice-contract-address>
-VITE_XDC_APOTHEM_RPC=https://erpc.apothem.network
+VITE_APOTHEM_DICE_ADDRESS=<testnet-dice-contract-address>
+VITE_XDC_APOTHEM_RPC=https://rpc.apothem.network
 ```
 
 ## Development
