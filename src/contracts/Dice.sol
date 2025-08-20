@@ -90,7 +90,6 @@ contract Dice is ReentrancyGuard, Pausable, VRFConsumerBaseV2, Ownable {
     // ============ Constants ============
     uint8 private constant MAX_NUMBER = 6;
     uint8 public constant MAX_HISTORY_SIZE = 10;
-    uint256 public constant DENOMINATOR = 10000;
     uint256 public constant MAX_BET_AMOUNT = 10_000_000 * 10**18;
     uint256 public constant MAX_POSSIBLE_PAYOUT = 60_000_000 * 10**18; // 10M * 6
     uint32 private constant GAME_TIMEOUT = 1 hours;

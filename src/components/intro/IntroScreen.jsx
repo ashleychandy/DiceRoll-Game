@@ -1051,7 +1051,7 @@ const IntroScreen = ({ onComplete }) => {
                 </h3>
               </div>
               <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">
-                GAMA leverages blockchain's native{' '}
+                GAMA leverages blockchain&apos;s native{' '}
                 <strong>VRF (Verifiable Random Function)</strong> to generate
                 truly random and tamper-proof results for each game.
               </p>

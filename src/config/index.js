@@ -7,7 +7,7 @@
 export const NETWORK_CONFIG = {
   mainnet: {
     rpcUrl:
-      import.meta.env.VITE_XDC_MAINNET_RPC || 'https://rpc.xinfin.network',
+      import.meta.env.VITE_XDC_MAINNET_RPC || 'https://erpc.xinfin.network',
     chainId: 50,
     name: 'XDC Mainnet',
     contracts: {
@@ -15,12 +15,11 @@ export const NETWORK_CONFIG = {
       token: import.meta.env.VITE_TOKEN_ADDRESS || '',
       dice: import.meta.env.VITE_DICE_ADDRESS || '',
     },
-    explorer: 'https://explorer.xinfin.network',
-    dexUrl: 'https://app.weswap.io/#/swap',
+    explorer: 'https://xdcscan.com/',
   },
   apothem: {
     rpcUrl:
-      import.meta.env.VITE_XDC_APOTHEM_RPC || 'https://rpc.apothem.network',
+      import.meta.env.VITE_XDC_APOTHEM_RPC || 'https://erpc.apothem.network',
     chainId: 51,
     name: 'XDC Apothem Testnet',
     contracts: {
@@ -28,8 +27,7 @@ export const NETWORK_CONFIG = {
       token: import.meta.env.VITE_APOTHEM_TOKEN_ADDRESS || '',
       dice: import.meta.env.VITE_APOTHEM_DICE_ADDRESS || '',
     },
-    explorer: 'https://explorer.apothem.network',
-    dexUrl: 'https://app-apothem.weswap.io/#/swap',
+    explorer: 'https://testnet.xdcscan.com/',
   },
 };
 
@@ -39,7 +37,7 @@ export const SUPPORTED_CHAIN_IDS = Object.values(NETWORK_CONFIG).map(
 );
 
 // Default network
-export const DEFAULT_NETWORK = 'apothem';
+export const DEFAULT_NETWORK = 'mainnet';
 
 // API configuration
 export const API_CONFIG = {
